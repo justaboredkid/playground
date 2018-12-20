@@ -1,0 +1,56 @@
+.test {
+    height: 100px;
+    width: 300px;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    margin: auto;
+    animation: slide .5s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards, down 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) .6s forwards;
+}
+
+.test1 {
+    height: 50px;
+    width: 75px;
+    background-color: blue;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    top: -50px;
+    opacity: 0;
+    position: relative;
+    animation: slide1 .5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1.5s forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-1000px);
+        margin-top: 0px;
+    }
+    100% {
+        transform: translateX(0px);
+        margin-top: 0px;
+    }
+}
+
+@keyframes slide1 {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(350px);
+        opacity: 100;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(250px);
+    }
+}
+
+;
